@@ -1,17 +1,19 @@
+import { useState } from "react";
 import "./header.css";
 
 const Header = () => {
+    const [toggle, showMenu] = useState(false);
+
   return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav_logo">
           Naym
         </a>
-        <div className="nav_menu">
+        <div className={toggle ? "nav_menu show-menu" : "nav_menu"}>
           <ul className="nav_list grid">
-
             <li className="nav_item">
-              <a href="#home" className="nav_link">
+              <a href="#home" className="nav_link active-link">
                 <i className="uil uil-estate nav_icon"></i>Home
               </a>
             </li>
@@ -23,7 +25,7 @@ const Header = () => {
             </li>
 
             <li className="nav_item">
-              <a href="skills" className="nav_link">
+              <a href="#skills" className="nav_link">
                 <i className="uil uil-file-alt nav_icon"></i>Skills
               </a>
             </li>
@@ -42,16 +44,15 @@ const Header = () => {
 
             <li className="nav_item">
               <a href="#contact" className="nav_link">
-                <i className="uil uil-message nav_icon">Contact</i>
+                <i className="uil uil-message nav_icon"></i>Contact
               </a>
             </li>
-
           </ul>
 
-          <i className="uil uil-times nav_close"></i>
+          <i className="uil uil-times nav_close" onClick={() => showMenu(!toggle)}></i>
         </div>
 
-        <div className="nav_toggle">
+        <div className="nav_toggle" onClick={() => showMenu(!toggle)}>
           <i className="uil uil-apps"></i>
         </div>
       </nav>
