@@ -37,4 +37,28 @@
     background-color: var(--title-color);
     color: var(--container-color);
     font-size: 1.25rem;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    display: inline-flex;
+}
+
+.footer_social-link:hover {
+    background-color: var(--title-color-dark);
+}
+
+.footer_copy {
+    display: block;
+    margin-top: 4.5rem;
+    color: var(--title-color);
+    text-align: center;
+    font-size: var(--small-front-size);
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .footer_social-link {
+        padding: 0.25rem;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+    }
 }
