@@ -63,6 +63,8 @@
 
 .home_img {
     background: url(../../assets/profile.jpg);
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(20%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
