@@ -28,18 +28,12 @@
 .home_title {
     font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
-    margin-top: 1.5rem;
-}
-
-.home_hand {
-    width: 32px;
-    height: 32px;
-    margin-left: 0.4rem;
+    margin-top: 3.5rem;
 }
 
 .home_subtitle {
     position: relative;
-    font-size: var(--h3-font-size);
+    font-size: var(--normal-font-size);
     padding-left: 5.2rem;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
@@ -161,6 +155,8 @@
         width: 250px;
         height: 250px;
     }
+
+    
 
     .home_scroll {
         margin-left: 7.5rem;
